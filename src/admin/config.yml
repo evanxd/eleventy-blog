@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: evanxd/eleventy-blog
+  branch: main
 
 media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
@@ -12,6 +13,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
