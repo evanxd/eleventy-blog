@@ -1,0 +1,8 @@
+---
+layout: base
+---
+
+{{ content | safe }}
+
+{% set posts = collections.posts %}
+{% include "posts-list.njk" %}
