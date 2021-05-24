@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: evanxd/eleventy-blog
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
